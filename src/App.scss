@@ -42,15 +42,24 @@
 .calendar__item {
     width: 15px;
     height: 15px;
-    background-color: #EDEDED;
+    background: #EDEDED;
     position: relative;
     cursor: pointer;
     border: 1px solid white;
+    &.count-9 {
+        background: #ACD5F2;
+    }
+    &.count-19 {
+        background: #7FA8C9;
+    }
+    &.count-29 {
+        background: #527BA0;
+    }
+    &.count-99 {
+        background: #254E77;
+    }
 }
 
-.count-9 {
-    background: #ACD5F2;
-}
 
 .calendar__item:hover {
     border: 1px solid rgba(0, 0, 0, 0.50);
@@ -112,4 +121,16 @@
     align-items: center;
     justify-content: space-around;
 
+}
+
+.category {
+    padding: 20px 50px;
+    display: flex;
+    align-items: center;
+    column-gap: 6px;
+    p {
+        color: #959494;
+        font-size: 8px;
+        font-weight: 400;
+    }
 }
